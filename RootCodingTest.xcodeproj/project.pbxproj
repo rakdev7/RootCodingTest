@@ -7,15 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E731552C247AD68600299D44 /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731552B247AD68600299D44 /* HelperExtensions.swift */; };
+		E731553E247F1D1B00299D44 /* DataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731553D247F1D1B00299D44 /* DataLoaderTests.swift */; };
+		E7315540247F1D9500299D44 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731553F247F1D9500299D44 /* CalculatorTests.swift */; };
+		E7315541247F1EF500299D44 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7316D622479D8FE003508BE /* DataLoader.swift */; };
 		E7316D472479C95C003508BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7316D462479C95C003508BE /* AppDelegate.swift */; };
 		E7316D492479C95C003508BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7316D482479C95C003508BE /* SceneDelegate.swift */; };
 		E7316D4B2479C95C003508BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7316D4A2479C95C003508BE /* ViewController.swift */; };
 		E7316D4E2479C95C003508BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7316D4C2479C95C003508BE /* Main.storyboard */; };
 		E7316D502479C962003508BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7316D4F2479C962003508BE /* Assets.xcassets */; };
 		E7316D532479C962003508BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7316D512479C962003508BE /* LaunchScreen.storyboard */; };
+		E7316D5C2479CA37003508BE /* input.txt in Resources */ = {isa = PBXBuildFile; fileRef = E7316D5B2479CA37003508BE /* input.txt */; };
+		E7316D5F2479D382003508BE /* DriverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7316D5E2479D382003508BE /* DriverModel.swift */; };
+		E7316D612479D3EA003508BE /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7316D602479D3EA003508BE /* TripModel.swift */; };
+		E7316D632479D8FE003508BE /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7316D622479D8FE003508BE /* DataLoader.swift */; };
+		E7316D65247A2D18003508BE /* DriveSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7316D64247A2D18003508BE /* DriveSummaryModel.swift */; };
+		E7316D69247A31E6003508BE /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7316D68247A31E6003508BE /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E7315538247F1A9500299D44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7316D3B2479C95C003508BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7316D422479C95C003508BE;
+			remoteInfo = RootCodingTest;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		E731552B247AD68600299D44 /* HelperExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
+		E731552D247D84B400299D44 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E7315533247F1A9500299D44 /* RootCodingTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RootCodingTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7315537247F1A9500299D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E731553D247F1D1B00299D44 /* DataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderTests.swift; sourceTree = "<group>"; };
+		E731553F247F1D9500299D44 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		E7316D432479C95C003508BE /* RootCodingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RootCodingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7316D462479C95C003508BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7316D482479C95C003508BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,9 +50,22 @@
 		E7316D4F2479C962003508BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7316D522479C962003508BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7316D542479C962003508BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7316D5B2479CA37003508BE /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
+		E7316D5E2479D382003508BE /* DriverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverModel.swift; sourceTree = "<group>"; };
+		E7316D602479D3EA003508BE /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
+		E7316D622479D8FE003508BE /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		E7316D64247A2D18003508BE /* DriveSummaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveSummaryModel.swift; sourceTree = "<group>"; };
+		E7316D68247A31E6003508BE /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E7315530247F1A9500299D44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7316D402479C95C003508BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +76,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E731552A247AD64F00299D44 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E731552B247AD68600299D44 /* HelperExtensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E731552E247DB79900299D44 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E7316D4A2479C95C003508BE /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E7315534247F1A9500299D44 /* RootCodingTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7315537247F1A9500299D44 /* Info.plist */,
+				E731553D247F1D1B00299D44 /* DataLoaderTests.swift */,
+				E731553F247F1D9500299D44 /* CalculatorTests.swift */,
+			);
+			path = RootCodingTestTests;
+			sourceTree = "<group>";
+		};
 		E7316D3A2479C95C003508BE = {
 			isa = PBXGroup;
 			children = (
+				E731552D247D84B400299D44 /* README.md */,
 				E7316D452479C95C003508BE /* RootCodingTest */,
+				E7315534247F1A9500299D44 /* RootCodingTestTests */,
 				E7316D442479C95C003508BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				E7316D432479C95C003508BE /* RootCodingTest.app */,
+				E7315533247F1A9500299D44 /* RootCodingTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,10 +124,15 @@
 		E7316D452479C95C003508BE /* RootCodingTest */ = {
 			isa = PBXGroup;
 			children = (
+				E7316D4C2479C95C003508BE /* Main.storyboard */,
 				E7316D462479C95C003508BE /* AppDelegate.swift */,
 				E7316D482479C95C003508BE /* SceneDelegate.swift */,
-				E7316D4A2479C95C003508BE /* ViewController.swift */,
-				E7316D4C2479C95C003508BE /* Main.storyboard */,
+				E731552E247DB79900299D44 /* Controllers */,
+				E7316D67247A318D003508BE /* BusinessLogic */,
+				E7316D66247A3170003508BE /* Parser */,
+				E7316D5D2479D33B003508BE /* Models */,
+				E731552A247AD64F00299D44 /* Utilities */,
+				E7316D5A2479C9F9003508BE /* Input Files */,
 				E7316D4F2479C962003508BE /* Assets.xcassets */,
 				E7316D512479C962003508BE /* LaunchScreen.storyboard */,
 				E7316D542479C962003508BE /* Info.plist */,
@@ -67,9 +140,61 @@
 			path = RootCodingTest;
 			sourceTree = "<group>";
 		};
+		E7316D5A2479C9F9003508BE /* Input Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7316D5B2479CA37003508BE /* input.txt */,
+			);
+			path = "Input Files";
+			sourceTree = "<group>";
+		};
+		E7316D5D2479D33B003508BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E7316D5E2479D382003508BE /* DriverModel.swift */,
+				E7316D602479D3EA003508BE /* TripModel.swift */,
+				E7316D64247A2D18003508BE /* DriveSummaryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E7316D66247A3170003508BE /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				E7316D622479D8FE003508BE /* DataLoader.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		E7316D67247A318D003508BE /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				E7316D68247A31E6003508BE /* Calculator.swift */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E7315532247F1A9500299D44 /* RootCodingTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E731553C247F1A9500299D44 /* Build configuration list for PBXNativeTarget "RootCodingTestTests" */;
+			buildPhases = (
+				E731552F247F1A9500299D44 /* Sources */,
+				E7315530247F1A9500299D44 /* Frameworks */,
+				E7315531247F1A9500299D44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7315539247F1A9500299D44 /* PBXTargetDependency */,
+			);
+			name = RootCodingTestTests;
+			productName = RootCodingTestTests;
+			productReference = E7315533247F1A9500299D44 /* RootCodingTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E7316D422479C95C003508BE /* RootCodingTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7316D572479C962003508BE /* Build configuration list for PBXNativeTarget "RootCodingTest" */;
@@ -97,6 +222,10 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = OrgName;
 				TargetAttributes = {
+					E7315532247F1A9500299D44 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = E7316D422479C95C003508BE;
+					};
 					E7316D422479C95C003508BE = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -116,11 +245,19 @@
 			projectRoot = "";
 			targets = (
 				E7316D422479C95C003508BE /* RootCodingTest */,
+				E7315532247F1A9500299D44 /* RootCodingTestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E7315531247F1A9500299D44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7316D412479C95C003508BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,23 +265,48 @@
 				E7316D532479C962003508BE /* LaunchScreen.storyboard in Resources */,
 				E7316D502479C962003508BE /* Assets.xcassets in Resources */,
 				E7316D4E2479C95C003508BE /* Main.storyboard in Resources */,
+				E7316D5C2479CA37003508BE /* input.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E731552F247F1A9500299D44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E731553E247F1D1B00299D44 /* DataLoaderTests.swift in Sources */,
+				E7315540247F1D9500299D44 /* CalculatorTests.swift in Sources */,
+				E7315541247F1EF500299D44 /* DataLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7316D3F2479C95C003508BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E7316D4B2479C95C003508BE /* ViewController.swift in Sources */,
+				E731552C247AD68600299D44 /* HelperExtensions.swift in Sources */,
+				E7316D5F2479D382003508BE /* DriverModel.swift in Sources */,
+				E7316D632479D8FE003508BE /* DataLoader.swift in Sources */,
 				E7316D472479C95C003508BE /* AppDelegate.swift in Sources */,
+				E7316D612479D3EA003508BE /* TripModel.swift in Sources */,
+				E7316D69247A31E6003508BE /* Calculator.swift in Sources */,
 				E7316D492479C95C003508BE /* SceneDelegate.swift in Sources */,
+				E7316D65247A2D18003508BE /* DriveSummaryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7315539247F1A9500299D44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7316D422479C95C003508BE /* RootCodingTest */;
+			targetProxy = E7315538247F1A9500299D44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E7316D4C2479C95C003508BE /* Main.storyboard */ = {
@@ -166,6 +328,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E731553A247F1A9500299D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39XXES98DU;
+				INFOPLIST_FILE = RootCodingTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MyOrg.RootCodingTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RootCodingTest.app/RootCodingTest";
+			};
+			name = Debug;
+		};
+		E731553B247F1A9500299D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39XXES98DU;
+				INFOPLIST_FILE = RootCodingTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MyOrg.RootCodingTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RootCodingTest.app/RootCodingTest";
+			};
+			name = Release;
+		};
 		E7316D552479C962003508BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -319,6 +521,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E731553C247F1A9500299D44 /* Build configuration list for PBXNativeTarget "RootCodingTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E731553A247F1A9500299D44 /* Debug */,
+				E731553B247F1A9500299D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E7316D3E2479C95C003508BE /* Build configuration list for PBXProject "RootCodingTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
