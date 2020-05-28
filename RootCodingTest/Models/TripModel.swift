@@ -12,14 +12,13 @@ struct TripModel {
     let trips: [Trip]?
 }
 
-// Using a class here as I need to modify trip time and trip speed values after initialization
-class Trip {
+struct Trip {
     let driverName: String
     let startTime: String
     let endTime: String
     let milesDriven: Double
-    var tripTime: Double
-    var tripSpeed: Int
+    let tripTime: Double
+    let tripSpeed: Int
 
     init(driverName: String = "", startTime: String = "", endTime: String = "", milesDriven: Double = 0.0, tripTime: Double = 0.0, tripSpeed: Int = 0) {
         self.driverName = driverName

@@ -12,12 +12,6 @@ struct Calculator {
     func calculateDriveSummaries(from parsedDriveData: DriveData) -> DriveSummaryModel? {
         // Safely extracting Trips Data from DriveData
         guard let allTripsData = parsedDriveData.trips.trips else { return nil }
-        
-        // Calculates trip time and trip speed for all trips
-        for eachtrip in allTripsData {
-            eachtrip.tripTime = calculateTripTime(for: eachtrip)
-            eachtrip.tripSpeed = Int((eachtrip.milesDriven/eachtrip.tripTime).rounded())
-        }
        
         // Discards any trips that average a speed of less than 5 mph or greater than 100 mph.
         let filteredTrips = allTripsData.filter({$0.tripSpeed>=5 && $0.tripSpeed<=100})
@@ -56,9 +50,8 @@ struct Calculator {
         return DriveSummaryModel(driveSummaries: sortedDrivesummaries)
     }
     
-    func calculateTripTime(for eachTrip: Trip) -> Double {
-        guard let startTime = eachTrip.startTime.dateValue else { return 0}
-        guard let endTime = eachTrip.endTime.dateValue else { return 0}
+    func calculateTripTime(between startTime:Date?,and endTime:Date?) -> Double {
+        guard let startTime = startTime, let endTime = endTime else { return 0}
         // calculate Time difference in seconds
         let difference = Calendar.current.dateComponents([.second], from: startTime, to: endTime)
         guard let duration = difference.second else { return 0}

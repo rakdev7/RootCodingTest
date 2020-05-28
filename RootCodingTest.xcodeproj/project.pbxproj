@@ -11,6 +11,13 @@
 		E731553E247F1D1B00299D44 /* DataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731553D247F1D1B00299D44 /* DataLoaderTests.swift */; };
 		E7315540247F1D9500299D44 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731553F247F1D9500299D44 /* CalculatorTests.swift */; };
 		E7315541247F1EF500299D44 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7316D622479D8FE003508BE /* DataLoader.swift */; };
+		E73155422480677400299D44 /* DriverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7316D5E2479D382003508BE /* DriverModel.swift */; };
+		E73155432480677D00299D44 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7316D602479D3EA003508BE /* TripModel.swift */; };
+		E73155442480678000299D44 /* DriveSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7316D64247A2D18003508BE /* DriveSummaryModel.swift */; };
+		E73155452480678A00299D44 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7316D68247A31E6003508BE /* Calculator.swift */; };
+		E73155462480678F00299D44 /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731552B247AD68600299D44 /* HelperExtensions.swift */; };
+		E73155482480697B00299D44 /* MockInput.txt in Resources */ = {isa = PBXBuildFile; fileRef = E73155472480697B00299D44 /* MockInput.txt */; };
+		E7315549248069C000299D44 /* MockInput.txt in Resources */ = {isa = PBXBuildFile; fileRef = E73155472480697B00299D44 /* MockInput.txt */; };
 		E7316D472479C95C003508BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7316D462479C95C003508BE /* AppDelegate.swift */; };
 		E7316D492479C95C003508BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7316D482479C95C003508BE /* SceneDelegate.swift */; };
 		E7316D4B2479C95C003508BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7316D4A2479C95C003508BE /* ViewController.swift */; };
@@ -42,6 +49,7 @@
 		E7315537247F1A9500299D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E731553D247F1D1B00299D44 /* DataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderTests.swift; sourceTree = "<group>"; };
 		E731553F247F1D9500299D44 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
+		E73155472480697B00299D44 /* MockInput.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MockInput.txt; sourceTree = "<group>"; };
 		E7316D432479C95C003508BE /* RootCodingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RootCodingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7316D462479C95C003508BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7316D482479C95C003508BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				E7315537247F1A9500299D44 /* Info.plist */,
+				E73155472480697B00299D44 /* MockInput.txt */,
 				E731553D247F1D1B00299D44 /* DataLoaderTests.swift */,
 				E731553F247F1D9500299D44 /* CalculatorTests.swift */,
 			);
@@ -255,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E73155482480697B00299D44 /* MockInput.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +274,7 @@
 			files = (
 				E7316D532479C962003508BE /* LaunchScreen.storyboard in Resources */,
 				E7316D502479C962003508BE /* Assets.xcassets in Resources */,
+				E7315549248069C000299D44 /* MockInput.txt in Resources */,
 				E7316D4E2479C95C003508BE /* Main.storyboard in Resources */,
 				E7316D5C2479CA37003508BE /* input.txt in Resources */,
 			);
@@ -277,7 +288,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E731553E247F1D1B00299D44 /* DataLoaderTests.swift in Sources */,
+				E73155462480678F00299D44 /* HelperExtensions.swift in Sources */,
+				E73155422480677400299D44 /* DriverModel.swift in Sources */,
+				E73155452480678A00299D44 /* Calculator.swift in Sources */,
 				E7315540247F1D9500299D44 /* CalculatorTests.swift in Sources */,
+				E73155442480678000299D44 /* DriveSummaryModel.swift in Sources */,
+				E73155432480677D00299D44 /* TripModel.swift in Sources */,
 				E7315541247F1EF500299D44 /* DataLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

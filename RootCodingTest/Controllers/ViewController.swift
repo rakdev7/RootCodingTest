@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         self.driveSummariesTableView.dataSource = self
         
         //loading data from file and parsing it to the data model
-        guard let parsedDriveData = DataLoader().fetchData(from: ViewControllerConstants.kinputFileType) else { return }
+        guard let parsedDriveData = DataLoader().fetchDataFrom(fileName: ViewControllerConstants.kinputFileType) else { return }
         
         //calculating the results from loaded data model above
         summary = Calculator().calculateDriveSummaries(from: parsedDriveData)
