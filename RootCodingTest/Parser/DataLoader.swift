@@ -9,7 +9,6 @@
 import Foundation
 
 struct DataLoaderConstants {
-    static let kinputFileName = "input";
     static let kinputFileType = "txt";
     static let kDriverCommand = "Driver"
     static let kTripCommand = "Trip"
@@ -20,15 +19,14 @@ typealias DriveData = (drivers: DriverModel, trips: TripModel)
 
 class DataLoader {
 
-    final func fetchDataFromFile() -> DriveData? {
-        let inputFileName = DataLoaderConstants.kinputFileName
+    final func fetchData(from file: String) -> DriveData? {
         var drivers = [Driver]()
         var trips = [Trip]()
         var driverModel: DriverModel = DriverModel(drivers: nil)
         var tripModel: TripModel = TripModel(trips: nil)
         
         //Loading `input.txt` file from bundle into program memory as a String
-        guard let path = Bundle.main.path(forResource: inputFileName, ofType: DataLoaderConstants.kinputFileType) else { return nil}
+        guard let path = Bundle.main.path(forResource: file, ofType: DataLoaderConstants.kinputFileType) else { return nil}
         
         do {
             let data = try String(contentsOfFile: path, encoding: .utf8)

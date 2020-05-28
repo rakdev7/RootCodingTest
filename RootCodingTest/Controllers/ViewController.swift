@@ -9,7 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    struct ViewControllerConstants {
+        static let kinputFileType = "input"
+    }
+    
     @IBOutlet weak var driveSummariesTableView: UITableView!
     var summary: DriveSummaryModel? = nil
     override func viewDidLoad() {
@@ -21,7 +24,7 @@ class ViewController: UIViewController {
         self.driveSummariesTableView.dataSource = self
         
         //loading data from file and parsing it to the data model
-        guard let parsedDriveData = DataLoader().fetchDataFromFile() else { return }
+        guard let parsedDriveData = DataLoader().fetchData(from: ViewControllerConstants.kinputFileType) else { return }
         
         //calculating the results from loaded data model above
         summary = Calculator().calculateDriveSummaries(from: parsedDriveData)

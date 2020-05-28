@@ -19,6 +19,8 @@ class DataLoaderTests: XCTestCase {
     }
 
     func testFetchDataFromFile() throws {
+        let fetchedDriveData = dataLoader.fetchData(from: "MockInput.txt")
+        
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
