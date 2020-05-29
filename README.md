@@ -14,5 +14,5 @@ I have made intentional choices of using tuples, structures, classes and extensi
 
 I have written a few test cases to demostrate my unit testing skills. _These are just a **sample** to showcase the fact that I can write more unit tests if needed which thoroughly test the application code._
 
-P.S. If you want to replace input.txt with a file with different name, go to `ViewController.swift` and replace the name of the file here - `static let kinputFileType = "input"`
+P.S. If you want to replace input.txt with a file with different name, go to `ViewController.swift` and replace the name of the file here - `static let kinputFileName = "input"`
 
