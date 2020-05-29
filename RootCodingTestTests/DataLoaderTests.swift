@@ -10,6 +10,7 @@ import XCTest
 
 class DataLoaderTests: XCTestCase {
     var fetchedDriveData: DriveData?
+    
     override func setUpWithError() throws {
         fetchedDriveData = DataLoader().fetchDataFrom(fileName: "MockInput")
     }
@@ -28,12 +29,5 @@ class DataLoaderTests: XCTestCase {
 
     func testFetchedDrivers() {
         XCTAssertTrue(fetchedDriveData?.drivers.drivers?.count == 3)
-    }
-    
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
     }
 }

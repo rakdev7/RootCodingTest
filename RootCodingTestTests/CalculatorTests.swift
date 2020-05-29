@@ -9,25 +9,34 @@
 import XCTest
 
 class CalculatorTests: XCTestCase {
-
+    var driveSummaryModel: DriveSummaryModel?
+    var mockDriveData: DriveData?
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        mockDriveData = DataLoader().fetchDataFrom(fileName: "MockInput")
+        guard let mockData = mockDriveData else {
+            XCTFail("Couldn't load mock drive data for \(self)")
+            return
+        }
+        driveSummaryModel = Calculator().calculateDriveSummaries(from: mockData)
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        mockDriveData = nil
+        driveSummaryModel = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCalculatedDriveSummaries() throws {
+        XCTAssertNotNil(driveSummaryModel)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testDriveSummariesCount() {
+        XCTAssertTrue(driveSummaryModel?.driveSummaries?.count == 3)
     }
-
+    
+    func testCalculateTripTime() {
+        let startTime = mockDriveData?.trips.trips?.first?.startTime.dateValue
+        let endTime = mockDriveData?.trips.trips?.first?.endTime.dateValue
+        XCTAssertTrue(Calculator().calculateTripTime(between: startTime, and: endTime) == 0.5)
+    }
 }

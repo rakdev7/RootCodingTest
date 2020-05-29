@@ -10,6 +10,11 @@ import Foundation
 
 struct TripModel {
     let trips: [Trip]?
+    
+    // Discards any trips that average a speed of less than 5 mph or greater than 100 mph.
+    var filteredTripsData: [Trip] {
+        return trips?.filter({ $0.tripSpeed >= 5 && $0.tripSpeed <= 100 }) ?? []
+    }
 }
 
 struct Trip {
