@@ -2,7 +2,7 @@
 
 Problem Statement - https://gist.github.com/dan-manges/1e1854d0704cb9132b74
 
-Solution : This program reads the input from a file named `input.txt` saved with in the application bundle of the iOS app. Output is shown as a list of results in a table view. *I couldn't accept the input via stdin (e.g. if you're using Ruby cat input.txt | ruby yourcode.rb), or as a file name given on the command line (e.g. ruby yourcode.rb input.txt)*
+**Solution** : This program reads the input from a file named `input.txt` saved with in the application bundle of the iOS app. Output is shown as a list of results in a table view. *I couldn't accept the input via stdin (e.g. if you're using Ruby cat input.txt | ruby yourcode.rb), or as a file name given on the command line (e.g. ruby yourcode.rb input.txt)*
 
 ### Note: This code can be tested by changing/replacing the "contents" of this `input.txt` file and seeing the output in a simulator/physical device when run on Xcode. You need to press `CMD + R` to run this app.
 
