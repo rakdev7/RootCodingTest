@@ -12,7 +12,7 @@ I created this app in a modular fashion mainly based on Single Responsibility pr
 
 I have made intentional choices of using tuples, structures, classes and extensions wherever necessary. I have also added unit tests.
 
-I have written a few test cases to demostrate my unit testing skills. _I have acheived over 99% of code coverage in all essential classes._
+I have written a suit of test cases to demostrate my unit testing skills. _I have acheived over 99% of code coverage in all essential classes._
 
 P.S. If you want to replace input.txt with a file with different name, go to `ViewController.swift` and replace the name of the file here - `static let kinputFileName = "input"`
 
