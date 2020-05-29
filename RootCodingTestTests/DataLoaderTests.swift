@@ -9,25 +9,29 @@
 import XCTest
 
 class DataLoaderTests: XCTestCase {
-    var fetchedDriveData: DriveData?
-    
-    override func setUpWithError() throws {
-        fetchedDriveData = DataLoader().fetchDataFrom(fileName: "MockInput")
-    }
 
-    override func tearDownWithError() throws {
-        fetchedDriveData = nil
-    }
-
-    func testFetchDataFromFile() throws {
+    func testFetchDataFromFileNotNil() throws {
+        let fetchedDriveData = DataLoader().fetchDataFrom(fileName: "MockInput")
         XCTAssertNotNil(fetchedDriveData)
     }
     
     func testFetchedTrips() {
+        let fetchedDriveData = DataLoader().fetchDataFrom(fileName: "MockInput")
         XCTAssertTrue(fetchedDriveData?.trips.trips?.count == 5)
     }
 
     func testFetchedDrivers() {
+        let fetchedDriveData = DataLoader().fetchDataFrom(fileName: "MockInput")
         XCTAssertTrue(fetchedDriveData?.drivers.drivers?.count == 3)
+    }
+    
+    func testFetchDataFromFileNil() throws {
+        let fetchedDriveData = DataLoader().fetchDataFrom(fileName: "WrongFileName")
+        XCTAssertNil(fetchedDriveData)
+    }
+    
+    func testCorruptInputFile() {
+        let fetchedDriveData = DataLoader().fetchDataFrom(fileName: "CorruptMockInput")
+        XCTAssertNil(fetchedDriveData)
     }
 }

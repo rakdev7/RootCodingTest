@@ -8,9 +8,9 @@ Problem Statement - https://gist.github.com/dan-manges/1e1854d0704cb9132b74
 
 This is built on Xcode 11.5 using iOS SDK 13.5, Swift 5.0.
 
-I created this app in a modular fashion mainly based on Single Responsibility principle. Each class/struct is confined to a specific thing it deals with. I chose structs for data models to prevent unexpected changes to the data they contain. Also used class for Trip model since I wanted to intentionally add data after initial parsing from `input.txt` file.
+I created this app in a modular fashion mainly based on Single Responsibility principle. Each class/struct is given a specific responsibilty. I chose structs for data models to prevent unexpected changes to the underlying data.
 
-I have made intentional choices of using tuples, structures, classes and extensions wherever necessary. I have also added unit tests for most of my business logic.
+I have made intentional choices of using tuples, structures, classes and extensions wherever necessary. I have also added unit tests.
 
 I have written a few test cases to demostrate my unit testing skills. _These are just a **sample** to showcase the fact that I can write more unit tests if needed which thoroughly test the application code._
 

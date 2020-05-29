@@ -27,7 +27,6 @@ class DataLoader {
         
         //Loading `input.txt` file from bundle into program memory as a String
         guard let path = Bundle.main.path(forResource: file, ofType: DataLoaderConstants.kinputFileType) else { return nil}
-        
         do {
             let data = try String(contentsOfFile: path, encoding: .utf8)
             let lines = data.components(separatedBy: .newlines)

@@ -14,11 +14,9 @@ class CalculatorTests: XCTestCase {
     
     override func setUpWithError() throws {
         mockDriveData = DataLoader().fetchDataFrom(fileName: "MockInput")
-        guard let mockData = mockDriveData else {
-            XCTFail("Couldn't load mock drive data for \(self)")
-            return
+        if let mockData = mockDriveData {
+            driveSummaryModel = Calculator().calculateDriveSummaries(from: mockData)
         }
-        driveSummaryModel = Calculator().calculateDriveSummaries(from: mockData)
     }
 
     override func tearDownWithError() throws {
@@ -30,8 +28,8 @@ class CalculatorTests: XCTestCase {
         XCTAssertNotNil(driveSummaryModel)
     }
     
-    func testDriveSummariesCount() {
-        XCTAssertTrue(driveSummaryModel?.driveSummaries?.count == 3)
+    func testFilteredTrips() {
+        XCTAssertTrue(mockDriveData?.trips.filteredTripsData.count == 3)
     }
     
     func testCalculateTripTime() {
