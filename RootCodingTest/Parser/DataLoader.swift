@@ -26,9 +26,9 @@ class DataLoader {
         var tripModel: TripModel = TripModel(trips: nil)
         
         //Loading `input.txt` file from bundle into program memory as a String
-        guard let path = Bundle.main.path(forResource: file, ofType: DataLoaderConstants.kinputFileType) else { return nil}
+        guard let filePath = Bundle.main.path(forResource: file, ofType: DataLoaderConstants.kinputFileType) else { return nil}
         do {
-            let data = try String(contentsOfFile: path, encoding: .utf8)
+            let data = try String(contentsOfFile: filePath)
             let lines = data.components(separatedBy: .newlines)
             
             for eachLine in lines {
